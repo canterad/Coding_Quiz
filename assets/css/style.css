@@ -1,0 +1,189 @@
+/* Universal Selector: Set the box-sizing to border-box, making the padding and border included in the width and height of a box.
+   Set all padding and margins to zero. */
+   * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* main element: Set top margin to 15% so the main section is centered vertically. */
+main{
+     margin-top: 15%; 
+}
+
+/* Container class: Set up all of the container sections so elements within it will be horizontally centered. */
+/* Using flex-box to accomplish this. */
+.Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: nowrap;
+}
+
+/* Section class: Setting each section within the container to be an inline-block with 50% width. */
+.Section{
+    display: inline-block;
+    width: 50%;
+}
+
+/* QuizStartSection ID: Set this section up as an inline-block with 50% width and horizontally center the text. */
+#QuizStartSection{
+    display: inline-block; 
+    width: 50%;
+    text-align: center;
+}
+
+/* HighScoreLink ID: Added left padding to position the High Score link. */
+#HighScoreLink{
+    padding-left: 10px;
+}
+
+/* TimeElement class: Styled the time element so it is on the right side of the header section. */
+.TimeElement{
+    display: inline;
+    float: right;
+    padding-right: 10px;
+}
+
+/* TimeValue ID: Setup so it is an inline element. */
+#TimeValue{
+    display: inline;
+}
+
+/* HighScoresElement ID: Set the High Scores Element to be an in-line block and positioned it within the container. */
+#HighScoresElement{
+    display: inline-block;
+    margin-left: 25%;
+}
+
+/* QuestionElement ID: Set the Question Element as an inline-block and position it with margin on left side. */
+#QuestionElement{
+    display: inline-block;
+    margin-left: 25%;
+}
+
+/* QuizEndElement ID: Setting the quiz end element to be an inline-block and position it with some added space on the left side. */
+#QuizEndElement{
+    display: inline-block;
+    margin-left: 25%;
+}
+
+/* QuizStartParagraph ID: Position the coding quiz challenge paragraph so there is space between it and the header. */
+#QuizStartParagraph{
+    margin-top: 20px;
+}
+
+/* QuizEndHeader ID: Set the font-weight to the thickest and font weight to 20 pixels for the quiz end header text. */
+#QuizEndHeader{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* ScoreElement ID: Setting the score element to be in-line and adding some space between it and the paragraph above it. */
+#ScoreElement{
+    margin-top: 10px;
+    display: in-line;
+}
+
+/* button element: Set styles for all of the button elements. */
+button{
+    cursor: pointer;
+    color: white;
+    background-color: blue; 
+    padding-left: 5px;  
+    padding-right: 5px; 
+}
+
+/* button hover: Changed the opacity to 0.5 so user sees effect when the user hovers over a button. */
+button:hover{
+    opacity: 0.5; 
+}
+
+/* button disabled: Changed the opacity to 0.3 and cursor to default so user can see the button is disabled. */
+button:disabled{
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Ordered List class: Positioned the ordered list element within the section. */
+.OrderedList{
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+/* QuestionText ID: Set the question text paragraph so it is a block so will start on a new line and take up the whole width. */
+/* Set the font weight so it is the thickest and font size to 18 pixels. */
+#QuestionText{
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* QuizStartButton ID: Position the Start Quiz button so there is space between it and the paragraph above. */
+#QuizStartButton{
+    margin-top: 20px;
+}
+
+/* btn-group class - Set the Question buttons in this block so they will be displayed vertically one under the other. */
+.btn-group button {
+    display: block;
+    margin-top: 5px;
+}
+
+/* QuestionBtn1 ID: Add some space above the first question button. */
+#QuestionBtn1{
+    margin-top: 15px;
+} 
+
+/* QuestionBtn2 ID: Set the buttons display setting to block and add some space above the second question button. */
+#QuestionBtn2{
+    display: block;
+    margin-top: 20px;
+}
+
+/* QuestionBtn3 ID: Set the buttons display setting to block and add some space above the third question button. */
+#QuestionBtn3{
+    display: block;
+     margin-top: 20px;
+}
+
+/* QuestionBtn4 ID: Set the buttons display setting to block and add some space above the fourth question button. */
+#QuestionBtn4{
+    display: block;
+    margin-top: 20px;
+    
+}
+
+/* ScoreValue ID: Setting the score value paragraph to be an inline-block. */
+#ScoreValue{
+    display: inline-block; 
+}
+
+/* InitialElement ID: Add some space above the Initials element and make it an in-line element. */
+#InitialElement{
+    margin-top: 10px;
+    display: in-line;
+}
+
+/* Initials ID: Set the width of the Initials input text box. */
+#Initials{
+    width: 50px;
+}
+
+/* btnHighScores class: Add some space between the ordered list and the highscores buttons. */
+.btnHighScores{
+    margin-top: 20px;
+}
+
+/*******************************************************************************************************************
+* MEDIA QUERY SECTION * If the screen is 950 pixels or less then change the flex direction fo all the containers.
+********************************************************************************************************************/
+
+@media screen and (max-width: 950px){ 
+
+    /* Changed the flexbox direction to column for all of the containers. */
+    .Container{
+        flex-direction: column;
+    }
+}

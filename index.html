@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    
+    <!-- Created main section so all of the content will be vertically centered on the page. -->
+    <main>
+
+      <!-- Set up header section that will display the View Highscores link and the timer element. -->
+      <header id="Header" class="Container">
+
+        <!-- Created section to contain all the elements and center them horizontally. -->
+        <section id="HeaderSection" class="Section">
+          <a id="HighScoreLink" href="highscores.html">View Highscores</a>
+          <section class="TimeElement" id="TimeElement">
+            <label>Time:</label>
+            <p id="TimeValue"></p>
+          </section>
+        </section>
+      </header>
+     
+      <!-- Created section that contains all of the elements to display the Quiz Start Information. -->
+      <section id="QuizStart" class="Container">
+
+        <!-- Create section to contain all the elements and center them horizontally. -->
+        <section id="QuizStartSection">
+          <h1>Coding Quiz Challenge</h1>
+          <p id="QuizStartParagraph" >Try to answer the following code-related questions within the time<br>limit.  Keep in mind that incorrect answers will 
+            penalize your score time<br>by ten seconds!</p>
+          <button type="button" id="QuizStartButton">Start Quiz</button>
+        </section>
+      </section>
+    
+      <!-- Created section that contains all of the elements to display the Questions. -->
+      <section id="Question" class="Container">
+
+        <!-- Created section to contain all the elements and center them horizontally. -->
+        <section id="QuestionSection" class="Section">
+          <section id="QuestionElement">
+            <p id="QuestionText"></p>
+            <div class="btn-group">
+            <button type="button" id="QuestionBtn1" data-number="1">1.</button>
+            <button type="button" id="QuestionBtn2" data-number="2">2.</button>
+            <button type="button" id="QuestionBtn3" data-number="3">3.</button>
+            <button type="button" id="QuestionBtn4" data-number="4">4.</button>
+            </div>
+            <div id="Response">
+            <br><hr/>
+            <p id="AnswerResponse">Wrong!</p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- Created section that contains all of the elements to display the Quiz End information. -->
+      <section id="QuizEnd" class="Container">
+
+        <!--Created a section to contains all the elements and center them horizontally. -->
+        <section id="QuizEndSection" class="Section">
+          <section id="QuizEndElement">
+            <p id="QuizEndHeader">All done!</p>
+            <section id="ScoreElement">
+                <label>Your final score is:</label>
+                <p id="ScoreValue"></p>
+                <section id="InitialElement">
+                  <label for="Initials">Enter Initials:</label>
+                  <input type="text" id=Initials maxlength="3">
+                  <button type="button" id="Submit">Submit</button>
+                </section>
+            </section>
+            <div id="EndResponse">
+              <br><hr/>
+              <p id="EndAnswerResponse">Wrong!</p>
+              </div>
+          </section>
+        </section>
+      </section>
+      
+    </main>
+    
+    <script src="./assets/js/index.js"></script>
+
+  </body>
+</html>
